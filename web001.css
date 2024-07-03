@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: rgb(194, 221, 245);
@@ -16,69 +16,71 @@ body{
 
 [data-testid="profile-picture"] {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin: 100px auto 0 auto;
     padding: 50px;
 }
 
-main{
+main {
     max-width: 50%;
     margin: auto;
     border-radius: 40px;
 }
 
-[data-testid="cover"]{
+[data-testid="cover"],
+[data-testid="cover1"],
+[data-testid="cover2"] {
     background-color: beige;
     border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    margin-bottom: 20px;
 }
 
-
 [data-testid="cover1"] {
-    text-align: center;
     background-color: aqua;
-    padding: 30px;
-    border-radius: 40px;
-    font-size: larger;
-
 }
 
 [data-testid="cover2"] {
-    text-align: center;
     background-color: lightgrey;
-    padding: 20px;
-    margin: 0px;
-    border-radius: 40px;
-    font-size: larger;
-    margin-bottom: 50px;
 }
 
-li{
+li {
     list-style-position: inside;
 }
 
-[data-testid="keywordLink"] {
-    padding: 30px;
-    color: gray;
-    font-size: larger;
-}
-
-[data-testid="hngLink"] {
-    color: gray;
-    font-size: larger;
-}
-
+[data-testid="keywordLink"],
+[data-testid="hngLink"],
 [data-testid="scrapeanywebLink"] {
     color: gray;
     font-size: larger;
+    padding: 20px;
 }
 
 [data-testid="footer"] {
-    max-width: 100%;
     background-color: seagreen;
     padding: 30px;
     text-align: center;
     font-size: 25px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    main {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        max-width: 90%;
+    }
+
+    [data-testid="profile-picture"] {
+        padding: 20px;
+        margin-top: 50px;
+    }
 }
