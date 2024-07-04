@@ -7,7 +7,7 @@ body {
 [data-testid="header"] {
     background-color: seagreen;
     text-align: center;
-    text-shadow: 5px 5px 15px black;
+    /* text-shadow: 5px 5px 15px #000000; */
     padding: 20px;
     font-size: 25px;
     border-bottom-left-radius: 50%;
